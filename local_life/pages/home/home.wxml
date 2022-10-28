@@ -1,0 +1,20 @@
+<!--轮播图-->
+<swiper circular="true" indicator-dots="true">
+<swiper-item wx:for="{{ swiperList}}" wx:key="id">
+<image src="{{item.image}}"></image>
+</swiper-item>
+</swiper>
+
+<!-- 九宫格 -->
+<view class="grid-list">
+<navigator class="grid-item" wx:for="{{gridList}}" wx:key="id" url="/pages/shoplist/shoplist?id={{item.id}}&title={{item.name}}">
+<image src="{{item.icon}}"></image>
+<text>{{item.name}}</text>
+</navigator>
+</view>
+
+<!-- 图片区域 -->
+<view class="img-box">
+<view>商家推荐</view>
+<view>交友论坛</view>
+</view>

@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/messgae/message",
+    "pages/contact/contact",
+    "pages/shoplist/shoplist"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "本地生活",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list":[
+      {
+        "pagePath":  "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath":"pages/messgae/message",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们"
+      }
+    ],
+    "selectedColor":"#FF6699",
+    "color": "#9933CC"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

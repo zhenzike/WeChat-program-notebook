@@ -1,0 +1,18 @@
+<view class="shop-item" wx:for="{{shoplist}}" wx:key="id">
+  <view class="thumb">
+    <image src="{{item.images[0]}}"></image>
+  </view>
+
+  <view class="info">
+    <text> {{item.name}}</text>
+    <text> 电话：{{m1.a(item.phone)}}</text>
+    <text> 地址： {{item.address}}</text>
+    <text> 营业事件：{{item.businessHours}}</text>
+  </view>
+</view>
+
+<wxs module="m1">
+  module.exports.a = function (str) {
+    return str.slice(0, 3) + '-' + str.slice(3, 7) + '-' + str.slice(7)
+  }
+</wxs>
